@@ -1,0 +1,24 @@
+.footer { background: #080808; padding: 80px 0 0; }
+.topBar { height:4px; background:linear-gradient(90deg, var(--orange) 0%, var(--orange-lt) 100%); margin-bottom:60px; }
+.grid {
+  display:grid; grid-template-columns:2fr 1fr 2fr; gap:4rem; margin-bottom:60px;
+}
+.logo { font-family:var(--font-head); font-size:2rem; text-transform:uppercase; color:var(--white); margin-bottom:1.25rem; }
+.grid > div > p { color:var(--muted); max-width:320px; line-height:1.7; font-size:.9rem; }
+.grid h3 {
+  font-family:var(--font-head); font-size:1.1rem; text-transform:uppercase; color:var(--white);
+  margin-bottom:1.25rem; padding-bottom:.6rem; border-bottom:2px solid var(--border);
+}
+.linkList { display:flex; flex-direction:column; gap:.7rem; }
+.linkList a { font-size:.9rem; color:var(--muted); transition:var(--trans); }
+.linkList a:hover { color:var(--orange); padding-left:.5rem; }
+.contactList { display:flex; flex-direction:column; gap:1.1rem; }
+.contactList li { display:flex; gap:1rem; align-items:flex-start; color:var(--muted); font-size:.9rem; }
+.contactList svg { color:var(--orange); flex-shrink:0; margin-top:2px; }
+.bottom {
+  text-align:center; padding:1.5rem 0;
+  border-top:1px solid rgba(255,255,255,.06); color:var(--muted); font-size:.82rem;
+}
+
+@media(max-width:900px) { .grid { grid-template-columns:1fr 1fr; } }
+@media(max-width:600px) { .grid { grid-template-columns:1fr; gap:2.5rem; } }

@@ -1,0 +1,206 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 76px;
+}
+
+.bgImg {
+  position: absolute;
+  inset: 0;
+  background: url('/images/gym_dark.png') center / cover no-repeat;
+  z-index: 0;
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.82) 52%,
+    rgba(20,8,0,0.60) 100%
+  );
+  z-index: 1;
+}
+
+.grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.eyebrow {
+  font-family: var(--font-head);
+  font-size: .85rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.05;
+  color: var(--white);
+}
+
+.sub {
+  font-size: 1rem;
+  color: var(--off-white);
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+.cta { width: fit-content; }
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: .5rem;
+}
+
+.stat span {
+  font-family: var(--font-head);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  display: block;
+}
+.stat span em { font-style: normal; }
+.stat p {
+  font-size: .78rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-top: .2rem;
+}
+.divider { width: 1px; height: 48px; background: var(--border); }
+
+/* Right */
+.right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative curved frame around person */
+.personWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glowing orange curved ring behind the image */
+.personWrap::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 55%;
+  border: 2px solid rgba(255, 107, 0, 0.55);
+  box-shadow:
+    0 0 28px rgba(255, 107, 0, 0.20),
+    inset 0 0 28px rgba(255, 107, 0, 0.07);
+  animation: morphBorder 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Second outer ring */
+.personWrap::after {
+  content: '';
+  position: absolute;
+  inset: -28px;
+  border-radius: 45% 55% 40% 60% / 60% 45% 55% 40%;
+  border: 1px solid rgba(255, 107, 0, 0.20);
+  animation: morphBorder 9s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+@keyframes morphBorder {
+  0%, 100% { border-radius: 60% 40% 55% 45% / 50% 60% 40% 55%; }
+  33%       { border-radius: 45% 55% 60% 40% / 60% 40% 55% 45%; }
+  66%       { border-radius: 55% 45% 40% 60% / 45% 55% 60% 40%; }
+}
+
+.person {
+  width: 100%;
+  max-width: 460px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 55px rgba(255, 107, 0, 0.35));
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 55%;
+  animation: floatY 4.5s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-16px); }
+}
+
+.badge {
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+  background: rgba(0,0,0,.85);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--orange);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  min-width: 210px;
+  z-index: 5;
+}
+
+.badgeTitle {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--white);
+}
+.badgeHours {
+  font-size: .82rem;
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: .75rem;
+}
+.badgeList { display: flex; flex-direction: column; gap: .5rem; }
+.badgeList li { display: flex; align-items: center; gap: .65rem; font-size: .88rem; color: var(--off-white); }
+.num {
+  width: 22px; height: 22px;
+  background: var(--orange); border-radius: 3px;
+  display: grid; place-items: center;
+  font-size: .72rem; font-weight: 700;
+  font-family: var(--font-head); color: var(--white); flex-shrink: 0;
+}
+
+/* Orange wave */
+.wave { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2; line-height: 0; }
+.wave svg { width: 100%; height: 60px; }
+
+@media(max-width: 900px) {
+  .grid { grid-template-columns: 1fr; padding-bottom: 130px; }
+  .right { justify-content: center; }
+  .person { max-width: 340px; }
+  .badge { position: static; margin: 1rem auto 0; width: 90%; }
+}
