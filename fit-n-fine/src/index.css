@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  --bg: #0D0D0D;
-  --bg-card: #181818;
-  --bg-dark: #111111;
-  --orange: #FF6B00;
-  --orange-lt: #FF8C38;
-  --orange-dim: rgba(255,107,0,0.12);
-  --white: #FFFFFF;
-  --off-white: #E0E0E0;
+  --bg: #050505;
+  --bg-card: #111111;
+  --bg-dark: #000000;
+  --orange: #c19d60; /* Bronze/Gold accent */
+  --orange-lt: #d4b581; /* Lighter Gold */
+  --orange-dim: rgba(193, 157, 96, 0.12); /* Dim Gold */
+  --white: #F5F5F5;
+  --off-white: #D0D0D0;
   --muted: #888888;
-  --border: rgba(255,107,0,.18);
+  --border: rgba(193, 157, 96, 0.18);
   --font-head: 'Oswald', sans-serif;
   --font-body: 'Inter', sans-serif;
   --trans: all .3s cubic-bezier(.4,0,.2,1);
-  --shadow-card: 0 8px 32px rgba(0,0,0,.45);
+  --shadow-card: 0 8px 32px rgba(0,0,0,.60);
 }
 
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }

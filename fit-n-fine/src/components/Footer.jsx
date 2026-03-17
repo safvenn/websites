@@ -8,8 +8,8 @@ export default function Footer() {
       <div className={styles.topBar}/>
       <div className={`container ${styles.grid}`}>
         <div>
-          <h2 className={styles.logo}>FIT N' <span className="orange">FINE</span></h2>
-          <p>Perinthalmanna's premier unisex fitness studio. Empowering individuals through structured and quality fitness training.</p>
+          <h2 className={styles.logo}>INFINITE <span className="orange">FITNESS CLUB</span></h2>
+          <p>Palakkad's premier fitness studio. Empowering individuals through structured and quality fitness training with imported modern equipment.</p>
         </div>
         <div>
           <h3>Quick Links</h3>
@@ -20,14 +20,14 @@ export default function Footer() {
         <div>
           <h3>Visit Us</h3>
           <ul className={styles.contactList}>
-            <li><MapPin size={16}/><span>Near Alankar Auditorium, Perintalmanna, Malappuram, Kerala 679322</span></li>
-            <li><Phone size={16}/><span>098468 28206</span></li>
-            <li><Clock size={16}/><span>Mon–Sat: 5:30 AM – 10:00 PM<br/>Sunday: Closed</span></li>
+            <li><MapPin size={16}/><span>Calicut Bypass, Near Trinity Eye Hospital, Kalvakulam, Manali, Palakkad, Kerala 678001</span></li>
+            <li><Phone size={16}/><span>098464 18671</span></li>
+            <li><Clock size={16}/><span>Mon–Sat: 5:00 AM – 10:00 PM<br/>Sunday: Closed</span></li>
           </ul>
         </div>
       </div>
       <div className={styles.bottom}>
-        <p>&copy; 2026 Fit N' Fine Fitness Studio. All rights reserved.</p>
+        <p>&copy; 2026 Infinite Fitness Club. All rights reserved.</p>
       </div>
     </footer>
   )

@@ -2,9 +2,9 @@ import { Quote } from 'lucide-react'
 import styles from './Reviews.module.css'
 
 const REVIEWS = [
-  { name:'Noufal',           initial:'N', text:'"I\'ve been training at this gym for several months now, and I can confidently say it\'s the best unisex gym in Perinthalmanna. The trainers are highly skilled, humble, and supportive. Highly recommended."' },
-  { name:'Jassim Vattuvara', initial:'J', text:'"The place is clean, well maintained, and has all the modern equipment needed. The atmosphere is motivating yet disciplined. Management maintains a professional and positive environment."' },
-  { name:'Aswathy',          initial:'A', text:'"Good gym for anyone who wants results without pressure. The trainers are supportive, the atmosphere is friendly, and the workouts are well planned. A place you will enjoy coming back to."' },
+  { name:'Rahul',           initial:'R', text:'"I\'ve been training at Infinite Fitness Club for several months now, and I can confidently say it\'s the best premium gym in Palakkad. The trainers are highly skilled and the equipment is top-notch."' },
+  { name:'Sneha Menon',     initial:'S', text:'"The place is clean, well maintained, and has all the modern imported equipment needed. I especially love the steam bath for recovery after a hard workout."' },
+  { name:'Arun Kumar',      initial:'A', text:'"Great gym with a fantastic vibe. The black and bronze interiors look amazing. The trainers are supportive, the atmosphere is friendly, and the workouts are well planned."' },
 ]
 
 export default function Reviews() {

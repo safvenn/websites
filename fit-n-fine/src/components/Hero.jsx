@@ -44,22 +44,22 @@ export default function Hero() {
         <div className={styles.content}>
           <p className={styles.eyebrow}>GET THE CHALLENGE FOR YOUR</p>
           <h1 className={styles.h1}>
-            Increase Your<br/>
-            <span className="orange">MUSCLE POWER</span>
+            Unlock Your<br/>
+            <span className="orange">INFINITE POTENTIAL</span>
           </h1>
           <p className={styles.sub}>
-            Experience a world-class fitness environment at Fit N' Fine in Perinthalmanna.
-            Our certified trainers and diverse programmes help you reach your peak every single day.
+            Experience a world-class premium fitness environment at Infinite Fitness Club in Palakkad.
+            Our certified trainers and modern equipment help you reach your peak every single day.
           </p>
           <a href="#contact" className={`btn btn-primary ${styles.cta}`}>
             <ArrowRight size={18}/> Join Us
           </a>
           <div className={styles.stats} ref={statsRef}>
-            <div className={styles.stat}><span>{c1}<em className="orange">+</em></span><p>Happy Members</p></div>
+            <div className={styles.stat}><span>{c1}<em className="orange">+</em></span><p>Active Members</p></div>
             <div className={styles.divider}/>
             <div className={styles.stat}><span>{c2}<em className="orange">+</em></span><p>Expert Trainers</p></div>
             <div className={styles.divider}/>
-            <div className={styles.stat}><span>{c3}<em className="orange">+</em></span><p>Programs</p></div>
+            <div className={styles.stat}><span>{c3}<em className="orange">+</em></span><p>Specialized Programs</p></div>
           </div>
         </div>
 
@@ -69,9 +69,9 @@ export default function Hero() {
             <img src="/images/hero_person.png" alt="Trainer" className={styles.person}/>
             <div className={styles.badge}>
               <p className={styles.badgeTitle}>Open 6 Days</p>
-              <p className={styles.badgeHours}>5:30 AM – 10:00 PM</p>
+              <p className={styles.badgeHours}>5:00 AM – 10:00 PM</p>
               <ul className={styles.badgeList}>
-                {['Personal Training','Body Building','Zumba & Aerobics','Cardio'].map((item, i) => (
+                {['Personal Training','Body Building','Cardio & Strength','Steam & Ice Baths'].map((item, i) => (
                   <li key={i}><span className={styles.num}>{i+1}</span>{item}</li>
                 ))}
               </ul>
@@ -84,7 +84,7 @@ export default function Hero() {
       {/* Orange wave */}
       <div className={styles.wave}>
         <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-          <path d="M0,0 C360,80 1080,0 1440,80 L1440,80 L0,80 Z" fill="#FF6B00"/>
+          <path d="M0,0 C360,80 1080,0 1440,80 L1440,80 L0,80 Z" fill="#c19d60"/>
         </svg>
       </div>
     </section>

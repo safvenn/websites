@@ -28,6 +28,27 @@
 .list { margin: 1.25rem 0 2rem; display: flex; flex-direction: column; gap: .75rem; }
 .list li { display: flex; align-items: center; gap: .75rem; font-size: .95rem; font-weight: 500; color: var(--off-white); }
 
+.achievements {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.achieveCard h3 {
+  font-size: 2rem;
+  color: var(--orange);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+.achieveCard p {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
 @media(max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
   .imgCol { display: none; }

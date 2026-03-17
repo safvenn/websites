@@ -2,10 +2,10 @@ import { Dumbbell, Users, HeartPulse, Apple } from 'lucide-react'
 import styles from './Services.module.css'
 
 const SVCS = [
-  { Icon: Dumbbell,   title:'Modern Equipment',  desc:'State-of-the-art machines, free weights, and functional training tools – kept spotlessly clean.' },
-  { Icon: Users,      title:'Certified Trainers', desc:'Experienced male and female trainers create personalised plans and ensure safe, proper form.' },
-  { Icon: HeartPulse, title:'Cardio Zone',        desc:'Dedicated area with treadmills, cycles, and ellipticals for your endurance training.' },
-  { Icon: Apple,      title:'Nutrition Guidance', desc:'Supplement advice and basic nutrition counselling to fuel performance and recovery.' },
+  { Icon: Dumbbell,   title:'Premium Equipment',  desc:'State-of-the-art imported machines and free weights kept spotlessly clean.' },
+  { Icon: Users,      title:'Expert Trainers',    desc:'Certified male and female trainers providing personalized guidance and form correction.' },
+  { Icon: HeartPulse, title:'Steam & Ice Baths',  desc:'Exclusive recovery zone with steam baths and ice therapy to reduce muscle soreness.' },
+  { Icon: Apple,      title:'Nutrition & Wellness',desc:'Dietary guidance and professional support to maximize your physical potential.' },
 ]
 
 export default function Services() {

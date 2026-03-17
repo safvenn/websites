@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} ${hidden ? styles.hidden : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#home" className={styles.logo}>FIT N' <span>FINE</span></a>
+        <a href="#home" className={styles.logo}>INFINITE <span>FITNESS CLUB</span></a>
 
         <button className={styles.toggle} onClick={() => setOpen(!open)} aria-label="menu">
           {open ? <X size={26}/> : <Menu size={26}/>}
